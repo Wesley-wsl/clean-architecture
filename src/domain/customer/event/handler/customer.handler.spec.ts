@@ -1,7 +1,8 @@
-import { Customer } from "../../../entity/customer";
-import Address from "../../../entity/value-object/address";
+import { Customer } from "../../entity/customer";
+import Address from "../../value-object/address";
 import CustomerChangedAddressHandler from "../customer-changed-address.event";
 import CustomerCreatedEvent from "../customer-created.event";
+
 import SendAddressChangeHandler from "./send-address-change.handler";
 import SendFirstLogWhenCustomerIsCreatedHandler from "./send-first-log-when-customer-is-created.handler";
 import SendSecondLogWhenCustomerIsCreatedHandler from "./send-second-log-when-customer-is-created";
