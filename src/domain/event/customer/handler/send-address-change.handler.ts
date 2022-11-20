@@ -6,7 +6,7 @@ export default class SendAddressChangeHandler
 {
   handle(event: CustomerChangedAddressHandler): void {
     console.log(
-      `Endereço do cliente: ${event.eventData.id}, ${event.eventData.name} alterado para: ${event.eventData.address}`
+      `Endereço do cliente: ${event.eventData.id}, ${event.eventData.name} alterado para: ${event.eventData.Address}`
     );
   }
 }
