@@ -28,17 +28,6 @@ describe("Unit test for product update use case", () => {
     expect(output).toEqual(input);
   });
 
-  it("Should throw error when name is missing", async () => {
-    const productRepository = MockRepository();
-    const productUpdateUseCase = new UpdateProductUseCase(productRepository);
-
-    input.name = "";
-
-    await expect(productUpdateUseCase.execute(input)).rejects.toThrow(
-      "Name is required"
-    );
-  });
-
   it("Should throw error when price is less than zero", async () => {
     const productRepository = MockRepository();
     const productUpdateUseCase = new UpdateProductUseCase(productRepository);
@@ -48,6 +37,18 @@ describe("Unit test for product update use case", () => {
 
     await expect(productUpdateUseCase.execute(input)).rejects.toThrow(
       "Price must be greater than zero"
+    );
+  });
+
+  it("Should throw error when name is missing", async () => {
+    const productRepository = MockRepository();
+    const productUpdateUseCase = new UpdateProductUseCase(productRepository);
+
+    input.name = "";
+    input.price = 20;
+
+    await expect(productUpdateUseCase.execute(input)).rejects.toThrow(
+      "Name is required"
     );
   });
 });
