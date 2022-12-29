@@ -883,6 +883,11 @@
     expect "^29.0.0"
     pretty-format "^29.0.0"
 
+"@types/jstoxml@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jstoxml/-/jstoxml-2.0.2.tgz#7ccfe12412857cc541a737ae56ce2559bd9b8ef4"
+  integrity sha512-60VaXPlZbd7tEhloAkE2E0lg+QoWpnGusdy+2pGMGFFpdsyxm/1GKs0o/nLJJKWXci92cnq2utmqaV5L7Zjqxw==
+
 "@types/lodash@^4.14.175":
   version "4.14.191"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
@@ -2594,6 +2599,11 @@ jsonc-parser@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.2.0.tgz#31ff3f4c2b9793f89c67212627c51c6394f88e76"
   integrity sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==
+
+jstoxml@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/jstoxml/-/jstoxml-3.2.6.tgz#c9493c5631d1c847e7420f8259df038a7b8d6c26"
+  integrity sha512-qL+tO1hssrJe6KjqKHeWEhCUxiiq0dB5vkmCwPhY7AYCMec1U/4gQR1gu2ID0qb9/E9ItHxVbiUhpFw3TXiwsA==
 
 kleur@^3.0.3:
   version "3.0.3"
